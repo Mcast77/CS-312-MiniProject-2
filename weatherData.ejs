@@ -1,0 +1,17 @@
+<div class="weatherData">
+  <div class="card-body">
+    <h6 class="card-title">
+      <%if(current) { %> Currently <%} else {%> <%=stats.dt_txt%> <%}%>
+    </h6>
+    <h5 class="card-subtitle">
+      <%=stats.weather[0].description%>
+    </h5>
+    <p class="card-text">
+    Current temp: <%= stats.main.temp %><br>
+    Feels like: <%= stats.main.feels_like%><br>
+    Max temp: <%= stats.main.temp_max%><br>
+    Man temp: <%= stats.main.temp_min%><br>
+    Humidity: <%= stats.main.humidity%>
+    </p>
+  </div>
+</div>
